@@ -31,7 +31,7 @@ const Products = () => {
 
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get('/api/products/getproducts');
+      const { data } = await axios.fetch('/api/products/getproducts');
       setProductData(data);
     } catch (error) {
       console.log(error);
