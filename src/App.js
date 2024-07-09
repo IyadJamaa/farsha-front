@@ -17,13 +17,11 @@ import Storage from './pages/Storage/ManageItems';
 import config from './config';
 import axios from 'axios';
 
-
-
 import React from 'react';
 
+axios.defaults.baseURL = config.BASE_URL;
 function App() {
 
-  
   return (
     <>
      <Router>
