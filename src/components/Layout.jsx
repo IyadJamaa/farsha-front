@@ -43,8 +43,10 @@ const LayoutApp = ({children}) => {
       <Sider  trigger={null} collapsible collapsed={collapsed}>
         <div className="logo"  style={{ display: 'flex', justifyContent: 'center' , margin:'20px'}}>
             <img src={img} className='w-25' alt="" />
+
             <h2 className="logo-title" style={{  padding:'5px'}}>Farsha</h2>
         </div>
+
         <Menu theme='dark' mode="inline" defaultSelectedKeys={window.location.pathname}>
             <Menu.Item key='/' icon={<HomeOutlined />} >
                 <Link  to="/">Home</Link>

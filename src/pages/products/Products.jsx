@@ -287,8 +287,12 @@ const Products = () => {
         <Form.Item name="price" label="Price" rules={[{ required: true, message: 'Please input the product price!' }]}>
           <Input />
         </Form.Item>
+
         <Form.Item name="image" label="Image" valuePropName="fileList" getValueFromEvent={normFile} rules={[{ required: true, message: 'Please upload the image!' }]}>
+          
           <Upload name="image" action="/upload/" listType="picture">
+
+          
             <Button icon={<UploadOutlined />}>Click to upload</Button>
           </Upload>
         </Form.Item>

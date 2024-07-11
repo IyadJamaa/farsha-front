@@ -19,7 +19,7 @@ const Product = ({ product, onAddToBill, isUpdateBill }) => {
     <Card
       hoverable
       style={{ width: 240, marginBottom: 30}}
-      cover={<img alt={product.name} src={product.image} style={{ height: 200}} />}
+      cover={<img alt={product.name} src={product.image.url} style={{ height: 200}} />}
     >
       <Meta title={product.name} description={`${product.price} LE`} />
       <div className="product-btn">

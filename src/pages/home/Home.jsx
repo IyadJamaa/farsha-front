@@ -145,6 +145,7 @@ const Home = () => {
               </div>
             ))}
       </div>
+      
       <div className="subsubcategory" style={{ display: 'flex', justifyContent: 'center', padding: '30px' }}>
         {selectedSubcategory &&
           categories
