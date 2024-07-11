@@ -75,7 +75,7 @@ const MonthlyInventory = () => {
     {
       title: "Image",
       dataIndex: "image",
-      render: (image, record) => <img src={image} alt={record.name} height={60} width={60} />
+      render: (image, record) => <img src={image.url} alt={record.name} height={60} width={60} />
     },
     {
       title: 'Product Name',
